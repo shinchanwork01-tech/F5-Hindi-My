@@ -21,11 +21,11 @@ from f5_tts.infer.utils_infer import (
 # =================================================================
 VOICES = {
     "Short": {
-        "ref_audio": "/content/F5-TTS/hs-1.wav",
+        "ref_audio": "/content/F5-Hindi-My/audio2.wav",
         "ref_text": "वेन यू गेट स्टिचेस, ए डॉक्टर थ्रेड्स ए नीडल थ्रू योर वुन्ड एंड पुल्स इट टाइट टू क्लोज द स्किन।"
     },
     "Kurt": {
-        "ref_audio": "/content/F5-TTS/base-2.wav",
+        "ref_audio": "/content/F5-Hindi-My/audio1.wav",
         "ref_text": "परमानेंट टैटू बनवाना पिछले कुछ सालों में एक ट्रेंड बन गया है।"
     }
 }
@@ -162,4 +162,5 @@ with gr.Blocks(title="Hindi TTS Station") as app:
 
 if __name__ == "__main__":
     # Launch Gradio with the --share functionality as per your original command
+
     app.launch(share=True)
